@@ -1,0 +1,28 @@
+.transactionHistory {
+  border-collapse: collapse;
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+tr:nth-child(2n) {
+  background-color: #d3d3d3;
+}
+
+.title {
+  padding: 15px 0;
+  background-color: #3cc0c0;
+  color: #fff;
+  border: 1px solid #e2d5d5;
+}
+
+.box {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.item {
+  border: 1px solid #d8d0d0;
+  padding: 10px;
+}

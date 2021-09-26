@@ -14,7 +14,7 @@ function Statistics({ title = 'Upload stats', stats }) {
             style={{ backgroundColor: randomColor() }}
           >
             <span className={st.label}>{stat.label}</span>
-            <span className={st.percentage}>{stat.percentage}%</span>
+            <span className={st.percent}>{stat.percent}%</span>
           </li>
         ))}
       </ul>

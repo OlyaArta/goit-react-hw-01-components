@@ -5,15 +5,13 @@
 .statistics {
   text-align: center;
   padding: 20px;
-  background-color: #18fdff;
-  width: 700px;
+  background-color: #65cacc;
   margin: 30px auto;
 }
 
 .statList {
   list-style: none;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -21,8 +19,9 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid #696969;
-  width: 150px;
+  border: 1px solid #686464;
+  border-radius: 5%;
+  width: 170px;
 }
 
 .title {
@@ -30,7 +29,7 @@
   padding: 20px 0px;
 }
 
-.percentage {
+.percent {
   font-size: 20px;
   margin-top: 10px;
 }
