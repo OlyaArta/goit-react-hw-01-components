@@ -6,7 +6,7 @@ function Statistics({ title = 'Upload stats', stats }) {
     <section className={st.statistics}>
       {title && <h2 className={st.title}>{title}</h2>}
 
-      <ul className={st.statList}>
+      <ul className={st.statisticsList}>
         {stats.map(stat => (
           <li
             key={stat.id}
@@ -14,7 +14,7 @@ function Statistics({ title = 'Upload stats', stats }) {
             style={{ backgroundColor: randomColor() }}
           >
             <span className={st.label}>{stat.label}</span>
-            <span className={st.percent}>{stat.percent}%</span>
+            <span className={st.percent}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>

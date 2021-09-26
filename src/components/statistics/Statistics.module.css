@@ -9,7 +9,7 @@
   margin: 30px auto;
 }
 
-.statList {
+.statisticsList {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
 .item {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
   border: 1px solid #686464;
   border-radius: 5%;
   width: 170px;
@@ -26,7 +26,7 @@
 
 .title {
   background-color: #fff;
-  padding: 20px 0px;
+  padding: 15px 0px;
 }
 
 .percent {
