@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import st from './Profile.module.css';
 
 function Profile({ name, tag, location, avatar, stats }) {
+  const { followers, likes, views } = stats;
   return (
     <div className={st.container}>
       <div className={st.profile}>
@@ -15,15 +16,15 @@ function Profile({ name, tag, location, avatar, stats }) {
         <ul className={st.stats}>
           <li className={st.popular}>
             <span className={st.label}>Followers </span>
-            <span className={st.quantity}>{stats.followers}</span>
+            <span className={st.quantity}>{followers}</span>
           </li>
           <li className={st.popular}>
             <span className={st.label}>Views </span>
-            <span className={st.quantity}>{stats.views}</span>
+            <span className={st.quantity}>{views}</span>
           </li>
           <li className={st.popular}>
             <span className={st.label}>Likes </span>
-            <span className={st.quantity}>{stats.likes}</span>
+            <span className={st.quantity}>{likes}</span>
           </li>
         </ul>
       </div>
@@ -36,7 +37,11 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(PropTypes.number).isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 };
 
 export default Profile;

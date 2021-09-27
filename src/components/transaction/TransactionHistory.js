@@ -13,13 +13,15 @@ function TransactionHistory({ items }) {
       </thead>
 
       <tbody className={st.box}>
-        {items.map(item => (
-          <tr key={item.id}>
-            <td className={st.item}>{item.type}</td>
-            <td className={st.item}>{item.amount}</td>
-            <td className={st.item}>{item.currency}</td>
-          </tr>
-        ))}
+        {items.map(({ id, type, amount, currency }) => {
+          return (
+            <tr key={id}>
+              <td className={st.item}>{type}</td>
+              <td className={st.item}>{amount}</td>
+              <td className={st.item}>{currency}</td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );
